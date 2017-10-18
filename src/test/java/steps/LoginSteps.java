@@ -6,7 +6,10 @@ import Pages.MinSidaPage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+
+import static org.junit.Assert.assertEquals;
 
 public class LoginSteps {
 
@@ -35,6 +38,7 @@ public class LoginSteps {
     public void verifyLoggedIn () {
         loginPage.navigateToLogin();
         loginPage.navigateToMinSidaWhenLoggedIn();
-        minSidaPage.getFullName();
+        assertEquals("equals ","Admin Istratör",minSidaPage.getFullName());
     }
+
 }
