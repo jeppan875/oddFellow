@@ -35,14 +35,18 @@ public class CreateGroupPage {
         senderField.clear();
         senderField.sendKeys(sender);
     }
-    public void setRubrikPrefixField (String headerPrefix) {
+    public void setRubrikPrefixField (String rubrikPrefix) {
         rubrikPrefixField.clear();
-        rubrikPrefixField.sendKeys(headerPrefix);
+        rubrikPrefixField.sendKeys(rubrikPrefix);
     }
     public void clickSaveButton () {
         saveButton.click();
     }
-    public void createNewGroup () {
-
+    public void createNewGroup (String name,String description,String sender,String rubrikPrefix) {
+        setNameField(name);
+        setDescriptionField(description);
+        setSenderField(sender);
+        setRubrikPrefixField(rubrikPrefix);
+        clickSaveButton();
     }
 }

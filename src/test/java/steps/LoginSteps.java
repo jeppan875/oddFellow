@@ -39,6 +39,7 @@ public class LoginSteps {
         loginPage.navigateToLogin();
         loginPage.navigateToMinSidaWhenLoggedIn();
         assertEquals("equals ","Admin Istratör",minSidaPage.getFullName());
+        driver.quit();
     }
 
 }
