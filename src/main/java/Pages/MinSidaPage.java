@@ -14,8 +14,13 @@ public class MinSidaPage {
 
     @FindBy(how = How.XPATH, using = "/html/body/div[2]/h2")
     WebElement fullName;
+    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div[2]/a")
+    WebElement editButton;
 
     public String getFullName () {
         return fullName.getText();
+    }
+    public void clickEditButton() {
+        editButton.click();
     }
 }
