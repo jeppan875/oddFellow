@@ -41,5 +41,4 @@ public class LoginSteps {
         assertEquals("equals ","Admin Istratör",minSidaPage.getFullName());
         driver.quit();
     }
-
 }
