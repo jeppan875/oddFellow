@@ -22,6 +22,8 @@ public class LoginPage {
     WebElement loginButton;
     @FindBy(how = How.XPATH, using = "//*[@id=\"signup_navbar\"]/ul[2]/li/ul/li[1]/a")
     WebElement minSida;
+    @FindBy(how = How.XPATH, using = "//*[@id=\"signup_navbar\"]/ul[2]/li/ul/li[2]/a")
+    WebElement loginOutButton;
 
 
     public void navigateToLogin() {
@@ -40,6 +42,9 @@ public class LoginPage {
     }
     public void navigateToMinSidaWhenLoggedIn() {
         minSida.click();
+    }
+    public void clickLogOutButton() {
+        loginOutButton.click();
     }
     public void login (String email,String password) {
         navigateToLogin();
