@@ -41,4 +41,10 @@ public class LoginPage {
     public void navigateToMinSidaWhenLoggedIn() {
         minSida.click();
     }
+    public void login (String email,String password) {
+        navigateToLogin();
+        setEmailField(email);
+        setPasswordField(password);
+        clickLoginButton();
+    }
 }
