@@ -14,8 +14,13 @@ public class SpecificGroupPage {
 
     @FindBy(how = How.XPATH, using = "/html/body/div[2]/h2")
     WebElement nameOfGroup;
+    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div[3]/a")
+    WebElement newGatheringButton;
 
     public String getNameofGroup() {
        return nameOfGroup.getText();
+    }
+    public void clickNewGatheringButton () {
+        newGatheringButton.click();
     }
 }
