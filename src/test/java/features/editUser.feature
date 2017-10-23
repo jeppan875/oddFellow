@@ -1,7 +1,7 @@
 @Run
 Feature: edit user
 
-  Scenario: The admin logs in
+  Scenario: A user information is edited
     Given user is created
     And logged in as new user
     When user is edited

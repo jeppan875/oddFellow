@@ -18,7 +18,6 @@ public class BrowserFactory {
 
         driver.manage().window().maximize();
         driver.get(url);
-
         return driver;
     }
     public static WebDriver getDriver(String browserName)

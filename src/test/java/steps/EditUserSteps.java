@@ -49,7 +49,6 @@ public class EditUserSteps {
     }
     @Then("^new changes take effect$")
     public void newChangesTakeEffect () {
-
         assertEquals("equals",minSidaPage.getFullName(),"förnamn nytt efternman");
         driver.quit();
     }
