@@ -5,3 +5,4 @@ Feature: create user
     Given is logged in as admin
     When a new user is created
     Then login as new user
+    And delete new user

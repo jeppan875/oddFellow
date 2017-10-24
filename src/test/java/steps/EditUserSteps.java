@@ -1,6 +1,7 @@
 package steps;
 
 import Helpers.BrowserFactory;
+import Helpers.UserHelper;
 import Pages.*;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -50,6 +51,12 @@ public class EditUserSteps {
     @Then("^new changes take effect$")
     public void newChangesTakeEffect () {
         assertEquals("equals",minSidaPage.getFullName(),"förnamn nytt efternman");
-        driver.quit();
     }
+    @And("^delete edited user$")
+    public void deleteNewUser () {
+        loginPage.navigateToLogin();
+        loginPage.clickLogOutButton();
+        UserHelper.deleteUser(newUser.getFirstName()+" "+newUser.getLastName(),driver);
+        driver.quit();
+    }    
 }

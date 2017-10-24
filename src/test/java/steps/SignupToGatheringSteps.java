@@ -1,6 +1,7 @@
 package steps;
 
 import Helpers.BrowserFactory;
+import Helpers.UserHelper;
 import Pages.*;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -68,7 +69,7 @@ public class SignupToGatheringSteps {
         groupPage.navigateToGroups();
         driver.findElement(By.linkText(newGroup.getName())).click();
         specificGroupPage.clickNewMemberButton();
-        newGroupMemberPage.setMemberName(newUser.getFirstName());
+        newGroupMemberPage.setMemberName(newUser.getFirstName()+" "+newUser.getLastName());
         Thread.sleep(2000);
         newGroupMemberPage.clickAddMember();
 
@@ -90,6 +91,7 @@ public class SignupToGatheringSteps {
     @Then("^the user should be registred for the gathering$")
     public void theUserShouldBeregisteredForTheGathering () {
         assertEquals("equals","Kommer",minSidaPage.getStatus());
+        UserHelper.deleteUser(newUser.getFirstName()+" "+newUser.getLastName(),driver);
         driver.quit();
     }
 }

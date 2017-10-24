@@ -1,9 +1,11 @@
 package steps;
 
 import Helpers.BrowserFactory;
+import Helpers.UserHelper;
 import Pages.LoginPage;
 import Pages.NewUserPage;
 import Pages.UserPage;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -23,7 +25,7 @@ public class NewUserStep {
     LoginPage loginPage = new LoginPage(driver);
     UserPage userPage = new UserPage(driver);
     NewUserPage newUserPage = new NewUserPage(driver);
-    User newUser = new User("förnamn","efternamn", UUID.randomUUID().toString()+"@dt.se","078955214","12345678");
+    User newUser = new User(UUID.randomUUID().toString(),"efternamn", UUID.randomUUID().toString()+"@dt.se","078955214","12345678");
 
     @Given("^is logged in as admin$")
     public void isLoggedInAsAdmin () {
@@ -44,6 +46,12 @@ public class NewUserStep {
     @Then("^login as new user$")
     public void theUserShouldExist () {
         loginPage.login(newUser.getEmail(),newUser.getPassword());
+    }
+    @And("^delete new user$")
+    public void deleteNewUser () {
+        loginPage.navigateToLogin();
+        loginPage.clickLogOutButton();
+        UserHelper.deleteUser(newUser.getFirstName()+" "+newUser.getLastName(),driver);
         driver.quit();
     }
 
