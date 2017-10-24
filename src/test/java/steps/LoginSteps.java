@@ -1,5 +1,6 @@
 package steps;
 
+import Helpers.AdminHelper;
 import Helpers.BrowserFactory;
 import Pages.LoginPage;
 import Pages.MinSidaPage;
@@ -19,8 +20,6 @@ public class LoginSteps {
 
     LoginPage loginPage = new LoginPage(driver);
     MinSidaPage minSidaPage = new MinSidaPage(driver);
-    String email = "admin@crisp.se";
-    String password = "admin";
 
     @Given("^is not logged in$")
     public void verifyNotLoggedIn () {
@@ -30,8 +29,8 @@ public class LoginSteps {
 
     @When("^Admin logs in$")
     public void adminLogsIn () {
-        loginPage.setEmailField(email);
-        loginPage.setPasswordField(password);
+        loginPage.setEmailField(AdminHelper.email);
+        loginPage.setPasswordField(AdminHelper.password);
         loginPage.clickLoginButton();
     }
     @Then("^the user should be logged in$")

@@ -1,13 +1,18 @@
 package steps;
 
+import Helpers.AdminHelper;
 import Helpers.BrowserFactory;
+import Helpers.GroupHelper;
 import Pages.*;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import models.Gathering;
 import models.Group;
 import org.openqa.selenium.WebDriver;
+
+import java.util.UUID;
 
 import static org.junit.Assert.assertEquals;
 
@@ -24,15 +29,13 @@ public class NewGatheringStep {
     NewGatheringPage newGatheringPage = new NewGatheringPage(driver);
     GatheringPage gatheringPage = new GatheringPage(driver);
 
-    Group newGroup = new Group("namn","beskrivning","admin@crisp.se","rubrik prefix");
+    Group newGroup = new Group(UUID.randomUUID().toString(),"beskrivning","admin@crisp.se","rubrik prefix");
     Gathering newGathering = new Gathering("gathering","plattan","2022-07-07","06:06","07:07");
 
     @Given("^a new group is created$")
     public void aNewGroupIsCreated () {
         BrowserFactory.openBrowser(BrowserFactory.BASE_URL);
-        String email = "admin@crisp.se";
-        String password = "admin";
-        loginPage.login(email,password);
+        loginPage.login(AdminHelper.email,AdminHelper.password);
         groupPage.navigateToGroups();
         groupPage.clickNewGroup();
         createGroupPage.createNewGroup(newGroup.getName(),newGroup.getDescription(),newGroup.getSender(),newGroup.getRubrikPrefix());
@@ -45,6 +48,10 @@ public class NewGatheringStep {
     @Then("^the gathering exists$")
     public void theGroupExists () {
         assertEquals("equals ",newGathering.getNameOfGathering(),gatheringPage.getNameOfGathering());
+    }
+    @And("^new group is deleted$")
+    public void newGroupIsDeleted () {
+        GroupHelper.deleteGroup(newGroup.getName(),driver);
         driver.quit();
     }
 }

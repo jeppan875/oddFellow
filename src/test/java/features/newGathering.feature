@@ -5,3 +5,4 @@ Feature: create a new gathering
     Given a new group is created
     When a new gathering is created
     Then the gathering exists
+    And new group is deleted

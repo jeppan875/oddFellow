@@ -5,3 +5,4 @@ Feature: create a group
     Given logged in as admin
     When admin creates a group
     Then the group exists
+    And delete group

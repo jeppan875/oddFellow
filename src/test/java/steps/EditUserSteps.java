@@ -1,5 +1,6 @@
 package steps;
 
+import Helpers.AdminHelper;
 import Helpers.BrowserFactory;
 import Helpers.UserHelper;
 import Pages.*;
@@ -27,9 +28,7 @@ public class EditUserSteps {
     @Given("^user is created$")
     public void userIsCreated () {
         BrowserFactory.openBrowser(BrowserFactory.BASE_URL);
-        String email = "admin@crisp.se";
-        String password = "admin";
-        loginPage.login(email,password);
+        loginPage.login(AdminHelper.email,AdminHelper.password);
         userPage.navigateToUserPage();
         userPage.clickCreateNewUser();
         newUserPage.createNewUser(newUser.getFirstName(),newUser.getLastName(),newUser.getEmail(),newUser.getPhone(),newUser.getPassword());

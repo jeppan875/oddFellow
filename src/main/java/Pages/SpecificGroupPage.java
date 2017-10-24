@@ -20,6 +20,8 @@ public class SpecificGroupPage {
     WebElement newGatheringButton;
     @FindBy(how = How.CSS, using = "body > div.container > div:nth-child(11) > a")
     WebElement newMemberButton;
+    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div[2]/button")
+    WebElement deleteButton;
 
     public String getNameofGroup() {
        return nameOfGroup.getText();
@@ -32,6 +34,9 @@ public class SpecificGroupPage {
     }
     public void clickNewMemberButton () {
         newMemberButton.click();
+    }
+    public void clickDeleteButton () {
+        deleteButton.click();
     }
 
 }

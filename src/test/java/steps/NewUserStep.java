@@ -1,5 +1,6 @@
 package steps;
 
+import Helpers.AdminHelper;
 import Helpers.BrowserFactory;
 import Helpers.UserHelper;
 import Pages.LoginPage;
@@ -30,9 +31,7 @@ public class NewUserStep {
     @Given("^is logged in as admin$")
     public void isLoggedInAsAdmin () {
         BrowserFactory.openBrowser(BrowserFactory.BASE_URL);
-        String email = "admin@crisp.se";
-        String password = "admin";
-        loginPage.login(email,password);
+        loginPage.login(AdminHelper.email,AdminHelper.password);
     }
 
     @When("^a new user is created$")

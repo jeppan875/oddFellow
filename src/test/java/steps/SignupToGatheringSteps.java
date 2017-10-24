@@ -1,6 +1,8 @@
 package steps;
 
+import Helpers.AdminHelper;
 import Helpers.BrowserFactory;
+import Helpers.GroupHelper;
 import Helpers.UserHelper;
 import Pages.*;
 import cucumber.api.java.en.And;
@@ -38,14 +40,12 @@ public class SignupToGatheringSteps {
 
     Group newGroup = new Group(UUID.randomUUID().toString(),"beskrivning","admin@crisp.se","rubrik prefix");
     Gathering newGathering = new Gathering("gathering","plattan","2022-07-07","06:06","07:07");
-    User newUser = new User("$$$","efternamn", UUID.randomUUID().toString()+"@dt.se","078955214","12345678");
+    User newUser = new User("$$$","$$$$", "$$$@dt.se","078955214","12345678");
 
     @Given("^logged in as an administrator$")
     public void aNewGroupIsCreated () {
         BrowserFactory.openBrowser(BrowserFactory.BASE_URL);
-        String email = "admin@crisp.se";
-        String password = "admin";
-        loginPage.login(email,password);
+        loginPage.login(AdminHelper.email,AdminHelper.password);
     }
     @And("^administrator creates a new group$")
     public void adminCreatesANewGroup () {
@@ -97,6 +97,7 @@ public class SignupToGatheringSteps {
         loginPage.navigateToLogin();
         loginPage.clickLogOutButton();
         UserHelper.deleteUser(newUser.getFirstName()+" "+newUser.getLastName(),driver);
+        GroupHelper.deleteGroup(newGroup.getName(),driver);
         driver.quit();
     }
 }
