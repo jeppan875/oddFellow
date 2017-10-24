@@ -38,7 +38,7 @@ public class SignupToGatheringSteps {
 
     Group newGroup = new Group(UUID.randomUUID().toString(),"beskrivning","admin@crisp.se","rubrik prefix");
     Gathering newGathering = new Gathering("gathering","plattan","2022-07-07","06:06","07:07");
-    User newUser = new User(UUID.randomUUID().toString(),"efternamn", UUID.randomUUID().toString()+"@dt.se","078955214","12345678");
+    User newUser = new User("$$$","efternamn", UUID.randomUUID().toString()+"@dt.se","078955214","12345678");
 
     @Given("^logged in as an administrator$")
     public void aNewGroupIsCreated () {
@@ -69,7 +69,7 @@ public class SignupToGatheringSteps {
         groupPage.navigateToGroups();
         driver.findElement(By.linkText(newGroup.getName())).click();
         specificGroupPage.clickNewMemberButton();
-        newGroupMemberPage.setMemberName(newUser.getFirstName()+" "+newUser.getLastName());
+        newGroupMemberPage.setMemberName(newUser.getFirstName());
         Thread.sleep(2000);
         newGroupMemberPage.clickAddMember();
 
@@ -91,6 +91,11 @@ public class SignupToGatheringSteps {
     @Then("^the user should be registred for the gathering$")
     public void theUserShouldBeregisteredForTheGathering () {
         assertEquals("equals","Kommer",minSidaPage.getStatus());
+    }
+    @And("^delete new user and group$")
+    public void deleteNewUserAndGroup () {
+        loginPage.navigateToLogin();
+        loginPage.clickLogOutButton();
         UserHelper.deleteUser(newUser.getFirstName()+" "+newUser.getLastName(),driver);
         driver.quit();
     }

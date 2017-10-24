@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bfc2f0e-83c1-4ab9-9f91-4b276e12afad" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/features/createUser.feature" afterPath="$PROJECT_DIR$/src/test/java/features/createUser.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/features/editUser.feature" afterPath="$PROJECT_DIR$/src/test/java/features/editUser.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/features/signUpToGathering.feature" afterPath="$PROJECT_DIR$/src/test/java/features/signUpToGathering.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/steps/EditUserSteps.java" afterPath="$PROJECT_DIR$/src/test/java/steps/EditUserSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/steps/NewUserStep.java" afterPath="$PROJECT_DIR$/src/test/java/steps/NewUserStep.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/steps/SignupToGatheringSteps.java" afterPath="$PROJECT_DIR$/src/test/java/steps/SignupToGatheringSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/test.java" afterPath="$PROJECT_DIR$/src/test/java/test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -48,14 +45,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignupToGatheringSteps.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SignupToGatheringSteps.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignupToGatheringSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="93" column="78" lean-forward="false" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
+            <state relative-caret-position="299">
+              <caret line="95" column="42" lean-forward="false" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4009#4010#0" expanded="true" />
+                <element signature="e#4080#4081#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signUpToGathering.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/features/signUpToGathering.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditUserSteps.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EditUserSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/EditUserSteps.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="383">
-              <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1916#1917#0" expanded="true" />
@@ -98,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/NewUserStep.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="51" column="14" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="55" selection-end-column="5" />
+              <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="52" selection-end-column="38" />
               <folding>
                 <element signature="e#1525#1526#0" expanded="true" />
                 <element signature="e#1598#1599#0" expanded="true" />
@@ -517,17 +526,17 @@
         <option value="$PROJECT_DIR$/src/test/java/steps/NewGatheringStep.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/SpecificGroupPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/NewGroupMemberPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/signUpToGathering.feature" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/SignupForGatheringPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/MinSidaPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/SpecificUserPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Helpers/UserHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/SignupToGatheringSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/createUser.feature" />
         <option value="$PROJECT_DIR$/src/test/java/steps/NewUserStep.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/editUser.feature" />
         <option value="$PROJECT_DIR$/src/test/java/steps/EditUserSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/signUpToGathering.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/SignupToGatheringSteps.java" />
       </list>
     </option>
   </component>
@@ -675,7 +684,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: editUser">
+  <component name="RunManager" selected="Cucumber java.Feature: signUpToGathering">
     <configuration name="All Features in: features" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -880,9 +889,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: editUser" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: createUser" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: signUpToGathering" />
+        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: signUpToGathering" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: editUser" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: createUser" />
         <item index="3" class="java.lang.String" itemvalue="Cucumber java.All Features in: features" />
         <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: newGathering" />
       </list>
@@ -908,9 +917,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__createUser - 2017.10.24 at 09h 39m 33s.xml">
-      <configuration name="Feature: createUser" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Feature__createUser - 2017.10.24 at 09h 40m 46s.xml">
       <configuration name="Feature: createUser" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
@@ -929,13 +935,16 @@
     <history-entry file="Feature__editUser - 2017.10.24 at 09h 54m 53s.xml">
       <configuration name="Feature: editUser" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__signUpToGathering - 2017.10.24 at 09h 37m 22s.xml">
-      <configuration name="Feature: signUpToGathering" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Feature__signUpToGathering - 2017.10.24 at 09h 46m 36s.xml">
       <configuration name="Feature: signUpToGathering" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="Feature__signUpToGathering - 2017.10.24 at 09h 49m 37s.xml">
+      <configuration name="Feature: signUpToGathering" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__signUpToGathering - 2017.10.24 at 10h 14m 05s.xml">
+      <configuration name="Feature: signUpToGathering" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__signUpToGathering - 2017.10.24 at 10h 17m 47s.xml">
       <configuration name="Feature: signUpToGathering" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
@@ -1377,14 +1386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/signUpToGathering.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Pages/NewGroupMemberPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1457,16 +1458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignupToGatheringSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="93" column="78" lean-forward="false" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Helpers/UserHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1485,17 +1476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/NewUserStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="51" column="14" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="55" selection-end-column="5" />
-          <folding>
-            <element signature="e#1525#1526#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/features/editUser.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1507,11 +1487,42 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/EditUserSteps.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
-          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1916#1917#0" expanded="true" />
             <element signature="e#2005#2006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/NewUserStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="52" selection-end-column="38" />
+          <folding>
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1598#1599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/signUpToGathering.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignupToGatheringSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="95" column="42" lean-forward="false" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4009#4010#0" expanded="true" />
+            <element signature="e#4080#4081#0" expanded="true" />
           </folding>
         </state>
       </provider>

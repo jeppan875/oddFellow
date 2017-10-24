@@ -10,3 +10,4 @@ Feature: Signup for a gathering
     And admin logs out and logs in as new user
     When user signup for the gathering
     Then the user should be registred for the gathering
+    And delete new user and group

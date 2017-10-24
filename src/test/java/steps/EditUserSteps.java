@@ -58,5 +58,5 @@ public class EditUserSteps {
         loginPage.clickLogOutButton();
         UserHelper.deleteUser(newUser.getFirstName()+" "+newUser.getLastName(),driver);
         driver.quit();
-    }    
+    }
 }
