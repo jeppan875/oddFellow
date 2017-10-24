@@ -13,9 +13,14 @@ public class SpecificUserPage {
 
     @FindBy(how = How.XPATH, using = "/html/body/div[2]/div[2]/button")
     WebElement deleteUser;
+    @FindBy(how = How.CSS, using = "button.btn:nth-child(2)")//firefox use css-väljare
+    WebElement confirmDeleteUser;
 
     public void clickDeleteUser() {
         deleteUser.click();
+    }
+    public void clickConfirmDeleteUser () {
+        confirmDeleteUser.click();
     }
 
 }

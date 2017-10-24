@@ -15,5 +15,6 @@ public class UserHelper {
         driver.findElement(By.linkText(name)).click();
         SpecificUserPage specificUserPage = new SpecificUserPage(driver);
         specificUserPage.clickDeleteUser();
+        specificUserPage.clickConfirmDeleteUser();
     }
 }

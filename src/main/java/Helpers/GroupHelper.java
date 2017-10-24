@@ -12,6 +12,7 @@ public class GroupHelper {
         driver.findElement(By.linkText(name)).click();
         SpecificGroupPage specificGroupPage = new SpecificGroupPage(driver);
         specificGroupPage.clickDeleteButton();
+        specificGroupPage.clickConfirmDelete();
 
     }
 }

@@ -22,6 +22,8 @@ public class SpecificGroupPage {
     WebElement newMemberButton;
     @FindBy(how = How.XPATH, using = "/html/body/div[2]/div[2]/button")
     WebElement deleteButton;
+    @FindBy(how = How.CSS, using = "button.btn:nth-child(2)")//firefox use css-väljare
+    WebElement confirmDeleteButton;
 
     public String getNameofGroup() {
        return nameOfGroup.getText();
@@ -37,6 +39,9 @@ public class SpecificGroupPage {
     }
     public void clickDeleteButton () {
         deleteButton.click();
+    }
+    public void clickConfirmDelete () {
+        confirmDeleteButton.click();
     }
 
 }
