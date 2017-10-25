@@ -16,7 +16,7 @@ public class LoginSteps {
 
     public LoginSteps () {}
 
-    WebDriver driver = BrowserFactory.getDriver("firefox");
+    WebDriver driver = BrowserFactory.getDriver("chrome");
 
     LoginPage loginPage = new LoginPage(driver);
     MinSidaPage minSidaPage = new MinSidaPage(driver);
